@@ -1,0 +1,6 @@
+framework module Pods_AMPNewsTests {
+  umbrella header "Pods-AMPNewsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
