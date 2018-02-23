@@ -10,6 +10,9 @@ pod 'Alamofire', '~> 4.6'
 
 #SwiftyJSON
 pod 'SwiftyJSON', '~> 4.0'
+
+#Kingfisher
+pod 'Kingfisher', '~> 4.6.1'
 end
 
   use_frameworks!
