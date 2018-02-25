@@ -1,0 +1,17 @@
+{
+    "assetType" : "ARTICLE",
+    "acceptComments" : false,
+    "overrides" : {
+        "overrideIdentifier" : "",
+        "overrideAbstract" : "Qantas Airways is expected to begin paying corporate tax again from next year, after reporting a record first half result despite soaring fuel costs.",
+        "overrideHeadline" : "Qantas set to pay tax again after strong result"
+    },
+    "sources" : [
+                 {
+                 "tagId" : "AFR"
+                 }
+                 ],
+    "sponsored" : false,
+    "hasVideo" : true,
+    "numberOfComments" : 0
+}
