@@ -40,7 +40,8 @@ extension UIView {
             tableView.rowHeight = UITableViewAutomaticDimension
             tableView.estimatedRowHeight = 60
             tableView.tableFooterView = UIView(frame: CGRect.zero)
-            tableView.separatorStyle = .none
+            tableView.separatorStyle = .singleLine
+            tableView.separatorInset = UIEdgeInsets.zero
         }
     }
 }
