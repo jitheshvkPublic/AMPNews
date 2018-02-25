@@ -6,25 +6,27 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--News Article List Table View Controller-->
+        <scene sceneID="da5-FB-lAl">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AMPNews" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <tableViewController id="0q6-Iu-USP" customClass="NewsArticleListTableViewController" customModule="AMPNews" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="mdU-aB-Inz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="apa-Cx-9P5"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                        <connections>
+                            <outlet property="dataSource" destination="0q6-Iu-USP" id="2Ju-j6-1C3"/>
+                            <outlet property="delegate" destination="0q6-Iu-USP" id="4z3-QK-9IB"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Km5-iu-RMm"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Eb-gr-gM6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="372" y="86.806596701649184"/>
+            <point key="canvasLocation" x="479" y="87"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3O9-D0-iAO">
@@ -37,7 +39,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZfM-R2-sMI"/>
+                        <segue destination="0q6-Iu-USP" kind="relationship" relationship="rootViewController" id="Roz-Nu-WuW"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nfr-Nq-AHI" userLabel="First Responder" sceneMemberID="firstResponder"/>
