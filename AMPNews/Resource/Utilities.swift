@@ -9,3 +9,4 @@
 import Foundation
 
 let kErrorDomain = "au.com.jithesh.AMPNews"
+let kNewStoriesRefreshControleText = "Checking New Stories"
