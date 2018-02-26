@@ -12,13 +12,11 @@ import Kingfisher
 
 extension UIImageView {
     func setImageFromLink(_ link:String?) {
-        guard let link = link else {
-            return
-        }
-        
-        if !link.isEmpty {
-            let url = URL(string: link)
-            self.kf.setImage(with:url) //lazy load and cache the image
+        if let link = link {
+            if !link.isEmpty {
+                let url = URL(string: link)
+                self.kf.setImage(with:url) //lazy load and cache the image
+            }
         }
     }
 }

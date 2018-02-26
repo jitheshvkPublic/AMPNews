@@ -17,4 +17,7 @@ enum Style:String {
     case NewsArticleRefreshControleStyle
     case NewsArticleTableViewCellStyle
     case NewsArticleTableViewStyle
+    
+    //NewsArticleDetailView
+    case NewsArticleDetailsProgressViewStyle
 }

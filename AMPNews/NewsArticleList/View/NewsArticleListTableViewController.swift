@@ -28,6 +28,7 @@ class NewsArticleListTableViewController: UITableViewController {
     
     private func setupView() {
         navigationItem.title = "News"
+        navigationController?.navigationBar.isTranslucent = false
         tableView.applyStyle(.NewsArticleTableViewStyle)
         tableView.register(UINib(nibName: NewsArticleTableViewCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier:NewsArticleTableViewCell.reuseIdentifier)
         
@@ -56,6 +57,13 @@ class NewsArticleListTableViewController: UITableViewController {
             })
             .disposed(by: disposeBag)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? NewsArticleDetailsViewController {
+            guard let selectedIndex = tableView.indexPathForSelectedRow else { return }
+            viewController.newsURL = newsArticles[selectedIndex.row].url
+        }
+    }
 }
 
 //MARK :- UITableViewDelegate
@@ -72,5 +80,9 @@ extension NewsArticleListTableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: NewsArticleTableViewCell.reuseIdentifier, for: indexPath) as! NewsArticleTableViewCell
         cell.configureWithNewsArticle(newsArticles[indexPath.row])
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: SegueIdentifier.NewsArticleDetails.rawValue, sender: self)
     }
 }
