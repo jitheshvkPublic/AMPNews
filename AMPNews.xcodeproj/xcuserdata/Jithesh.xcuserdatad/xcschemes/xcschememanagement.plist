@@ -7,7 +7,25 @@
 		<key>AMPNews.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>11</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6230FCE6203FA6C90075FD33</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6230FCFA203FA6C90075FD33</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6230FD05203FA6C90075FD33</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

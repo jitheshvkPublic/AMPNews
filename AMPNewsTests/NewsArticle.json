@@ -1,0 +1,281 @@
+{
+    "tabletHeadline" : "",
+    "assetType" : "ARTICLE",
+    "acceptComments" : false,
+    "overrides" : {
+        "overrideIdentifier" : "",
+        "overrideAbstract" : "Qantas Airways is expected to begin paying corporate tax again from next year, after reporting a record first half result despite soaring fuel costs.",
+        "overrideHeadline" : "Qantas set to pay tax again after strong result"
+    },
+    "sources" : [
+                 {
+                 "tagId" : "AFR"
+                 }
+                 ],
+    "authors" : [
+                 {
+                 "name" : "Jemima Whyte",
+                 "title" : "Senior Reporter",
+                 "email" : "",
+                 "relatedImages" : [
+                                    {
+                                    "assetType" : "IMAGE",
+                                    "authors" : [
+                                    
+                                    ],
+                                    "width" : 140,
+                                    "description" : "Jemima Whyte AFR Woodcut",
+                                    "sponsored" : false,
+                                    "type" : "afrWoodcutAuthorImage",
+                                    "photographer" : "",
+                                    "height" : 140,
+                                    "lastModified" : 1507769834439,
+                                    "id" : 1026215648,
+                                    "categories" : [
+                                    
+                                    ],
+                                    "brands" : [
+                                    
+                                    ],
+                                    "timeStamp" : 1507769834439,
+                                    "url" : "https:\/\/image1.png"
+                                    },
+                                    {
+                                    "assetType" : "IMAGE",
+                                    "authors" : [
+                                    
+                                    ],
+                                    "description" : "Jemima Whyte AFR Woodcut",
+                                    "sponsored" : false,
+                                    "type" : "afrWoodcutAuthorImage",
+                                    "photographer" : "",
+                                    "height" : 140,
+                                    "lastModified" : 1507769834439,
+                                    "id" : 1026215648,
+                                    "categories" : [
+                                    
+                                    ],
+                                    "brands" : [
+                                    
+                                    ],
+                                    "timeStamp" : 1507769834439,
+                                    "url" : "https:\/\/image2.png"
+                                    }
+                                    ],
+                 "relatedAssets" : [
+                 
+                 ]
+                 }
+                 ],
+    "relatedAssets" : [
+                       {
+                       "assetType" : "VIDEO",
+                       "lastModified" : 1519261540149,
+                       "id" : 8527036,
+                       "authors" : [
+                       
+                       ],
+                       "categories" : [
+                                       {
+                                       "name" : "Video BusinessDay",
+                                       "sectionPath" : "\/video-business\/video-businessday",
+                                       "orderNum" : 0
+                                       }
+                                       ],
+                       "headline" : "Qantas profits soar",
+                       "brands" : [
+                                   {
+                                   "title" : "Canberra Times",
+                                   "orderNum" : 9
+                                   },
+                                   {
+                                   "title" : "Drive",
+                                   "orderNum" : 0
+                                   },
+                                   {
+                                   "title" : "WA Today",
+                                   "orderNum" : 6
+                                   },
+                                   {
+                                   "title" : "National Times",
+                                   "orderNum" : 8
+                                   },
+                                   {
+                                   "title" : "Brisbane Times",
+                                   "orderNum" : 3
+                                   },
+                                   {
+                                   "title" : "The Sydney Morning Herald",
+                                   "orderNum" : 4
+                                   },
+                                   {
+                                   "title" : "Business Day",
+                                   "orderNum" : 2
+                                   },
+                                   {
+                                   "title" : "Essential Baby",
+                                   "orderNum" : 1
+                                   },
+                                   {
+                                   "title" : "Domain",
+                                   "orderNum" : 7
+                                   },
+                                   {
+                                   "title" : "The Age",
+                                   "orderNum" : 5
+                                   }
+                                   ],
+                       "sponsored" : false,
+                       "lastPublishedDate" : 1519261540130,
+                       "timeStamp" : 1519261540130,
+                       "url" : "http:\/\/domain.com.au\/video-business\/qantas-profits-soar-20180222-52ri4\/"
+                       }
+                       ],
+    "theAbstract" : "Qantas Airways is expected to begin paying corporate tax again from next year, after reporting a record first half result despite soaring fuel costs.",
+    "sponsored" : false,
+    "hasVideo" : true,
+    "byLine" : "Jemima Whyte ",
+    "companies" : [
+                   {
+                   "companyCode" : "QAN",
+                   "abbreviatedName" : "Qantas Airways",
+                   "exchange" : "ASX",
+                   "companyNumber" : "9661901",
+                   "id" : 997050088,
+                   "companyName" : "QANTAS AIRWAYS LIMITED"
+                   }
+                   ],
+    "numberOfComments" : 0,
+    "legalStatus" : "None",
+    "indexHeadline" : "Qantas set to pay tax again after strong result",
+    "onTime" : 1519091198000,
+    "identifier" : "",
+    "lastModified" : 1519292906889,
+    "id" : 1029434891,
+    "headline" : "Qantas set to pay tax again after strong result",
+    "categories" : [
+                    {
+                    "name" : "Aviation",
+                    "sectionPath" : "\/business\/transport\/aviation",
+                    "orderNum" : 0
+                    }
+                    ],
+    "relatedImages" : [
+                       {
+                       "assetType" : "IMAGE",
+                       "authors" : [
+                       
+                       ],
+                       "width" : 620,
+                       "description" : "Chief executive Alan Joyce said the latest strong result is a further indication that the airline's earnings were becoming less volatile after a cost-cutting drive.",
+                       "sponsored" : false,
+                       "type" : "afrArticleInline",
+                       "photographer" : "David Rowe",
+                       "height" : 0,
+                       "lastModified" : 1494324052769,
+                       "id" : 1021253707,
+                       "categories" : [
+                       
+                       ],
+                       "brands" : [
+                       
+                       ],
+                       "timeStamp" : 1494324052769,
+                       "url" : "https:\/\/Image1.jpg"
+                       },
+                       {
+                       "assetType" : "IMAGE",
+                       "authors" : [
+                       
+                       ],
+                       "width" : 620,
+                       "description" : "Qantas Airways is expected to begin paying corporate tax again from next year, after reporting a record first half result despite soaring fuel costs.",
+                       "sponsored" : false,
+                       "type" : "afrArticleInline",
+                       "photographer" : "",
+                       "height" : 0,
+                       "lastModified" : 1518394672710,
+                       "id" : 1029414781,
+                       "categories" : [
+                       
+                       ],
+                       "brands" : [
+                       
+                       ],
+                       "timeStamp" : 1518394672710,
+                       "url" : "https:\/\/Image2.jpg"
+                       },
+                       {
+                       "timeStamp" : 1519282457880,
+                       "assetType" : "IMAGE",
+                       "authors" : [
+                       
+                       ],
+                       "thumbnail" : "",
+                       "xLarge@2x" : "",
+                       "width" : 1536,
+                       "sponsored" : false,
+                       "description" : "Qantas CEO Alan Joyce after announcing the company's record half-year result at Sydney Airport yesterday.",
+                       "type" : "afrIndexLead",
+                       "photographer" : "Jessica Hromas",
+                       "large@2x" : "",
+                       "xLarge" : "",
+                       "height" : 1010,
+                       "lastModified" : 1519282457880,
+                       "thumbnail@2x" : "",
+                       "id" : 1029440168,
+                       "categories" : [
+                       
+                       ],
+                       "brands" : [
+                       
+                       ],
+                       "url" : "https:\/\/Image3.jpg",
+                       "large" : ""
+                       },
+                       {
+                       "assetType" : "IMAGE",
+                       "authors" : [
+                       
+                       ],
+                       "description" : "Qantas CEO Alan Joyce after announcing the company's record half-year result at Sydney Airport yesterday.",
+                       "sponsored" : false,
+                       "type" : "afrArticleInline",
+                       "photographer" : "Jessica Hromas",
+                       "height" : 0,
+                       "lastModified" : 1519282457880,
+                       "id" : 1029440168,
+                       "categories" : [
+                       
+                       ],
+                       "brands" : [
+                       
+                       ],
+                       "timeStamp" : 1519282457880,
+                       "url" : "https:\/\/Image4.jpg"
+                       },
+                       {
+                       "assetType" : "IMAGE",
+                       "authors" : [
+                       
+                       ],
+                       "description" : "Qantas CEO Alan Joyce after announcing the company's record half-year result at Sydney Airport yesterday.",
+                       "sponsored" : false,
+                       "type" : "afrArticleInline",
+                       "photographer" : "Jessica Hromas",
+                       "height" : 0,
+                       "lastModified" : 1519282457880,
+                       "id" : 1029440168,
+                       "categories" : [
+                       
+                       ],
+                       "brands" : [
+                       
+                       ],
+                       "timeStamp" : 1519282457880,
+                       "url" : "https:\/\/Image4.jpg"
+                       }
+                       ],
+    "timeStamp" : 1519285218998,
+    "url" : "http:\/\/www.afr.com\/business\/transport\/aviation\/qantas-set-to-pay-tax-again-after-strong-result-20180220-h0wd1n"
+}

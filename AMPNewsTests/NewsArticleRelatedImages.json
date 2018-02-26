@@ -1,0 +1,40 @@
+{  "theAbstract" : "GoPro's newest camera lets you lets you shoot a video, hop inside that video, and then shoot another one with your phone. ",
+    "byLine" : "John Davidson",
+    "headline" : "GoPro Fusion review: this camera will change the way you shoot video",
+    "url" : "http:\/\/www.afr.com\/technology\/gopro-fusion-review-this-camera-will-change-the-way-you-shoot-video-20180215-h0w6nt",
+    "timeStamp" : 1519285218998,
+    "relatedImages" : [
+                       {
+                       "width" : 620,
+                       "height" : 0,
+                       "url" : "Image1.jpg"
+                       },
+                       {
+                       "width" : 1536,
+                       "height" : 1010,
+                       "url" : "Image2.jpg"
+                       },
+                       {
+                       "width" : 120,
+                       "height" : 0,
+                       "url" : "Image3.jpg"
+                       },
+                       {
+                       "width" : 20,
+                       "height" : 10,
+                       "url" : "Image4.jpg"
+                       },
+                       {
+                       "width" : 10,
+                       "height" : 20,
+                       "url" : "Image5.jpg"
+                       },{
+                       "width" : 20,
+                       "height" : 10,
+                       "url" : "Image4.jpg"
+                       },{
+                       "height" : 10,
+                       "url" : "Image7.jpg"
+                       }
+                       ]
+}
