@@ -20,11 +20,6 @@ class NewsArticleListTableViewController: UITableViewController {
         setupView()
         fetchNewsFeed()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     private func setupView() {
         navigationItem.title = "News"
@@ -60,8 +55,9 @@ class NewsArticleListTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let viewController = segue.destination as? NewsArticleDetailsViewController {
-            guard let selectedIndex = tableView.indexPathForSelectedRow else { return }
-            viewController.newsURL = newsArticles[selectedIndex.row].url
+            if let selectedIndex = tableView.indexPathForSelectedRow {
+                viewController.newsURL = newsArticles[selectedIndex.row].url
+            }
         }
     }
 }

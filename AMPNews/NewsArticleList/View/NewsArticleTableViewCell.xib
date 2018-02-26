@@ -68,6 +68,9 @@
                     <constraint firstItem="moF-Qu-IVM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="kkq-xK-bET"/>
                 </constraints>
             </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" identifier="NewsArticleListItemCell" label="NewsArticleListItemCell">
+                <bool key="isElement" value="YES"/>
+            </accessibility>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="abstractLabel" destination="xab-u6-XHg" id="rGB-os-8zo"/>

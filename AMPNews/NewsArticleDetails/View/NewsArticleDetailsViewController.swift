@@ -18,18 +18,31 @@ class NewsArticleDetailsViewController: UIViewController {
         super.loadView()
         //Add webView
         let webConfiguration = WKWebViewConfiguration()
-        webView = WKWebView(frame: view.frame, configuration: webConfiguration)
+        webView = WKWebView(frame: CGRect.zero, configuration: webConfiguration)
+        webView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(webView)
+        
+        //Add constraint to webview with reference to safe area
+        webView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+        webView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        view.safeAreaLayoutGuide.trailingAnchor.constraint(equalTo: webView.trailingAnchor).isActive = true
+        view.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: webView.bottomAnchor).isActive = true
+        
+        //Add progress bar
+        progressView = UIProgressView()
+        progressView.translatesAutoresizingMaskIntoConstraints = false
+        progressView.applyStyle(.NewsArticleDetailsProgressViewStyle)
+        view.addSubview(progressView)
+        progressView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
+        progressView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
+        view.safeAreaLayoutGuide.trailingAnchor.constraint(equalTo: progressView.trailingAnchor).isActive = true
+        progressView.heightAnchor.constraint(equalToConstant: 2).isActive = true
+        view.updateConstraintsIfNeeded()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     private func setup() {
@@ -39,16 +52,10 @@ class NewsArticleDetailsViewController: UIViewController {
         webView.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
         webView.addObserver(self, forKeyPath: "title", options: .new, context: nil)
         
-        //Add progress bar
-        progressView = UIProgressView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 2))
-        progressView.applyStyle(.NewsArticleDetailsProgressViewStyle)
-        view.addSubview(progressView)
-        
-        guard let newsURL = newsURL,
-            let url = URL(string: newsURL) else {
-                return
+        if let newsURL = newsURL,
+            let url = URL(string: newsURL) {
+            webView.load(URLRequest(url: url))
         }
-        webView.load(URLRequest(url: url))
     }
     
     deinit {

@@ -15,13 +15,8 @@ enum ServiceEndpoint {
 
 class NetworkApiClient: ApiClient {
     func requestNewsArticleList(onSuccess: SuccessCallback?, onError: ErrorCallback?) {
-        if let encodedURL = ServiceEndpoint.ArticleListURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) {
-            
-            NetworkResource.request(url: encodedURL, method: .get, onSuccess: onSuccess, onError: onError)
-        }
-        else {
-            onError?(ErrorType(code: -1, message: "Could not call service"))
-            print("ERROR: Could not URL new article list url")
-        }
+        let encodedURL = ServiceEndpoint.ArticleListURL.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        
+        NetworkResource.request(url: encodedURL!, method: .get, onSuccess: onSuccess, onError: onError)
     }
 }
