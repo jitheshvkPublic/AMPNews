@@ -30,11 +30,12 @@ class NewsArticleViewModelTests: XCTestCase {
         XCTAssertEqual(newsArticleViewModel.headline, "")
         XCTAssertNil(newsArticleViewModel.url)
         XCTAssertNil(newsArticleViewModel.smallestImageURL)
+        XCTAssertEqual(newsArticleViewModel.timeAgo, "")
     }
     
     func testNewsArticleViewModelParameterisedInitializer() {
         let data = getDataFromJSONFile(TestDataFileName.NewsArticleRelatedImages)
-        var newsArticle = try! JSONDecoder().decode(NewsArticle.self, from: data)
+        let newsArticle = try! JSONDecoder().decode(NewsArticle.self, from: data)
         let newsArticleViewModel = NewsArticleViewModel(newsArticle: newsArticle)
         XCTAssertNotNil(newsArticleViewModel)
         let jsonData = JSON(data)
@@ -43,5 +44,6 @@ class NewsArticleViewModelTests: XCTestCase {
         XCTAssertEqual(newsArticleViewModel.headline, jsonData["headline"].string)
         XCTAssertEqual(newsArticleViewModel.url, jsonData["url"].string)
         XCTAssertEqual(newsArticleViewModel.smallestImageURL, "Image5.jpg")
+        XCTAssertEqual(newsArticleViewModel.timeAgo, "22/02/2018 18:40")
     }
 }

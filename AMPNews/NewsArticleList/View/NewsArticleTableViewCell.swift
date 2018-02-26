@@ -41,5 +41,6 @@ class NewsArticleTableViewCell: UITableViewCell {
         abstractLabel.text = newsArticle.abstract
         byLineLabel.text = newsArticle.byLine
         assetImageView.setImageFromLink(newsArticle.smallestImageURL)
+        timestampLabel.text = newsArticle.timeAgo
     }
 }

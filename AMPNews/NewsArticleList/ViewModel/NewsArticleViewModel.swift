@@ -41,6 +41,22 @@ class NewsArticleViewModel {
         }
     }
     
+    var timeAgo:String {
+        get {
+            if let timeStamp = newsArticle.timeStamp {
+                let date = Date(timeIntervalSince1970: Double(timeStamp/1000))
+                let format = DateFormatter()
+                format.locale = Locale(identifier: "en_US_POSIX")
+                format.timeZone = TimeZone.current
+                format.dateFormat = "dd/MM/YYYY HH:mm"
+                return format.string(from: date)
+            }
+            else {
+                return ""
+            }
+        }
+    }
+    
     init() {
         self.newsArticle = NewsArticle()
     }
